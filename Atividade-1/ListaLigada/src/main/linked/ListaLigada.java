@@ -108,7 +108,9 @@ public class ListaLigada implements EstruturaElementar{
     @Override
     public void insereElementoPosicao(int valor, int buscaIndice) {
         No atual = this.cabeca;
+        No anterior = null;
         int indice = 0;
+
         if(buscaIndice == 0){
             insereInicio(valor);
             return;
@@ -117,15 +119,18 @@ public class ListaLigada implements EstruturaElementar{
             while (atual != null) {
                 if (indice == buscaIndice) {
                     No novo = new No(valor);
-                    novo.setProximo(atual.getProximo());
-                    atual.setProximo(novo);
+                    novo.setProximo(atual);
+                    if (anterior != null) {
+                        anterior.setProximo(novo);
+                    }
                     return;
                 }
 
+                anterior = atual;
                 atual = atual.getProximo();
                 indice++;
             }
-    }
+        }
     }
 
     @Override
@@ -206,4 +211,15 @@ public class ListaLigada implements EstruturaElementar{
         }
         removeIndice(indice-1);
     } 
+
+    @Override
+    public String toString() {
+        No atual = this.cabeca;
+        String lista = "";
+        while(atual != null){
+            lista += atual.getValor() + " ";
+            atual = atual.getProximo();
+        }
+        return lista;
+    }
 }
