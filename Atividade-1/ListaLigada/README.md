@@ -17,3 +17,5 @@ A 10 3
 A -50 6
 R 22
 P
+
+## O código da resolução está no arquivo ExecutadorArquivo.java
