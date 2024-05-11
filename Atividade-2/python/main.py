@@ -4,8 +4,8 @@ from ListaLigada import ListaLigada
 from ExecutadorArquivo import ExecutadorArquivo
 
 def main():
-    path1 = "Atividade-1/ListaLigada/src/main/arq.txt"
-    path2 = "Atividade-1/ListaLigada/src/main/arq1.txt"
+    path1 = "Atividade-2/python/arq.txt"
+    path2 = "Atividade-2/python/arq1.txt"
     path3 = "Atividade-2/python/arq-novo.txt"
 
     listaLigada = ListaLigada()
