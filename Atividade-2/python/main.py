@@ -1,5 +1,3 @@
-path = "analise-de-desempenho-2024-1/Atividade-2/python/arq-novo.txt"
-
 from ListaLigada import ListaLigada
 from ExecutadorArquivo import ExecutadorArquivo
 
@@ -21,6 +19,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 

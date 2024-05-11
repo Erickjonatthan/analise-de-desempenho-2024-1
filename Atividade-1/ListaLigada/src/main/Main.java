@@ -7,7 +7,7 @@ public class Main {
 
         String path1 = "Atividade-1/ListaLigada/src/main/arq.txt";
         String path2 = "Atividade-1/ListaLigada/src/main/arq1.txt";
-        String path3 = "Atividade-2/python/arq-novo.txt";
+        String path3 = "Atividade-1/ListaLigada/src/main/arq-novo.txt";
 
         EstruturaElementar listaLigada = new ListaLigada();
 

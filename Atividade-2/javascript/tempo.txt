@@ -1,0 +1,10 @@
+1 - TotalMilliseconds : 94,5738
+2 - TotalMilliseconds : 92,7323
+3 - TotalMilliseconds : 89,2395
+4 - TotalMilliseconds : 93,9257
+5 - TotalMilliseconds : 93,2669
+6 - TotalMilliseconds : 97,4197
+7 - TotalMilliseconds : 91,2246
+8 - TotalMilliseconds : 164,1819
+9 - TotalMilliseconds : 93,7751
+10 - TotalMilliseconds : 94,3807
