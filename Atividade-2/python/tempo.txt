@@ -1,3 +1,4 @@
+Com os 3 arquivos:
 1 - TotalMilliseconds : 73,635
 2 - TotalMilliseconds : 64,2458
 3 - TotalMilliseconds : 64,4965
@@ -8,3 +9,14 @@
 8 - TotalMilliseconds : 60,6385
 9 - TotalMilliseconds : 63,7397
 10 - TotalMilliseconds : 67,138
+Somente com o arquivo arq-novo:
+TotalMilliseconds : 50,4342
+TotalMilliseconds : 64,3132
+TotalMilliseconds : 62,7123
+TotalMilliseconds : 68,8899
+TotalMilliseconds : 65,271
+TotalMilliseconds : 56,21
+TotalMilliseconds : 66,3592
+TotalMilliseconds : 67,9068
+TotalMilliseconds : 64,1317
+TotalMilliseconds : 52,5181

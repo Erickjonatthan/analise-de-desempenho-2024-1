@@ -2,20 +2,13 @@ from ListaLigada import ListaLigada
 from ExecutadorArquivo import ExecutadorArquivo
 
 def main():
-    path1 = "Atividade-2/python/arq.txt"
-    path2 = "Atividade-2/python/arq1.txt"
-    path3 = "Atividade-2/python/arq-novo.txt"
+   
+    path = "Atividade-2/python/arq-novo.txt"
 
     listaLigada = ListaLigada()
 
-    print("Resposta do arquivo (arq.txt):")
-    ExecutadorArquivo.executa(path1, listaLigada)
-    
-    print("Resposta do arquivo (arq1.txt):")
-    ExecutadorArquivo.executa(path2, listaLigada)
-
     print("Resposta do arquivo (arq-novo.txt):")
-    ExecutadorArquivo.executa(path3, listaLigada)
+    ExecutadorArquivo.executa(path, listaLigada)
 
 if __name__ == "__main__":
     main()
