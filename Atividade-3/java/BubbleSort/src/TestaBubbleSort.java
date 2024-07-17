@@ -1,4 +1,7 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 public class TestaBubbleSort {
@@ -9,7 +12,7 @@ public class TestaBubbleSort {
         String outputFile = "Atividade-3\\arq-teste-ordenado.txt";
 
         BubbleSort bs = new BubbleSort();
-        
+
         // Medir o uso de memória antes da execução
         long memBefore = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 
@@ -37,6 +40,16 @@ public class TestaBubbleSort {
         System.out.println("Array ordenado e salvo em: " + outputFile);
         System.out.println("Tempo de execução: " + elapsedTime + " ms");
         System.out.println("RAM utilizada: " + memUsed + " KB");
+
+        try (FileWriter fw = new FileWriter("Atividade-3/resultado-bubble-java.txt", true);
+                BufferedWriter bw = new BufferedWriter(fw);
+                PrintWriter out = new PrintWriter(bw)) {
+            // Escrever no arquivo o tempo de execução e a memória utilizada
+            out.println("Tempo de execução: " + elapsedTime + " ms, RAM utilizada: " + memUsed + " KB");
+        } catch (IOException e) {
+            // Tratamento de exceção de I/O
+            System.err.println("Erro ao escrever no arquivo: " + e.getMessage());
+        }
 
     }
 }

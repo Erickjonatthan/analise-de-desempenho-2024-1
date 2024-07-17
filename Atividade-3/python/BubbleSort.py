@@ -48,3 +48,7 @@ mem_used_kb = mem_after - mem_before
 print(f"Arquivo ordenado salvo como: {file_path.replace('arq-teste.txt', 'arq-teste-ordenado.txt')}")
 print(f"Tempo de execução: {elapsed_time_ms:.2f} ms")
 print(f"RAM utilizada: {mem_used_kb:.2f} KB")
+
+with open('Atividade-3/resultado-bubble-python.txt', 'a') as result_file:
+    # Escrever no arquivo o tempo de execução e a memória utilizada
+    result_file.write(f"Tempo de execução: {elapsed_time_ms:.2f} ms, RAM utilizada: {mem_used_kb:.2f} KB\n")

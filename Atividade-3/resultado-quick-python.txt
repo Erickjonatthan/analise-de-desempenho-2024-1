@@ -1,0 +1,10 @@
+Tempo de execu��o: 1.02 ms, RAM utilizada: 44.00 KB
+Tempo de execu��o: 0.98 ms, RAM utilizada: 52.00 KB
+Tempo de execu��o: 0.93 ms, RAM utilizada: 56.00 KB
+Tempo de execu��o: 0.91 ms, RAM utilizada: 44.00 KB
+Tempo de execu��o: 1.46 ms, RAM utilizada: 96.00 KB
+Tempo de execu��o: 1.03 ms, RAM utilizada: 36.00 KB
+Tempo de execu��o: 0.88 ms, RAM utilizada: 96.00 KB
+Tempo de execu��o: 0.93 ms, RAM utilizada: 40.00 KB
+Tempo de execu��o: 0.96 ms, RAM utilizada: 44.00 KB
+Tempo de execu��o: 1.08 ms, RAM utilizada: 128.00 KB
