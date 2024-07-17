@@ -9,6 +9,14 @@ public class TestaQuickSort {
         String outputFile = "Atividade-3\\arq-teste-ordenado.txt";
 
         QuickSort qs = new QuickSort();
+
+        
+        // Medir o uso de memória antes da execução
+        long memBefore = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+
+        // Medir o tempo de início
+        long startTime = System.nanoTime();
+
         // Ler números do arquivo
         List<Integer> list = qs.readNumbersFromFile(inputFile);
         int[] arr = list.stream().mapToInt(i -> i).toArray();
@@ -19,7 +27,17 @@ public class TestaQuickSort {
         // Escrever o array ordenado no arquivo
         qs.writeNumbersToFile(arr, outputFile);
 
+        // Medir o tempo de fim e calcular a diferença
+        long endTime = System.nanoTime();
+        long elapsedTime = (endTime - startTime) / 1000000; // Convertendo para milissegundos
+
+        // Medir o uso de memória após a execução e calcular a diferença
+        long memAfter = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+        long memUsed = (memAfter - memBefore) / 1024; // Convertendo bytes para KB
+
         System.out.println("Array ordenado e salvo em: " + outputFile);
+        System.out.println("Tempo de execução: " + elapsedTime + " ms");
+        System.out.println("RAM utilizada: " + memUsed + " KB");
 
     }
 }

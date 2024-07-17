@@ -1,3 +1,6 @@
+import time
+import psutil
+import os
 
 def bubble_sort(arr):
 	n = len(arr)
@@ -22,9 +25,26 @@ def read_and_sort_file(file_path):
     
     return sorted_arr
 
-# Caminho do arquivo
 file_path = r'Atividade-3\arq-teste.txt'
+
+# Medir o uso de memória antes da execução
+process = psutil.Process(os.getpid())
+mem_before = process.memory_info().rss / 1024  # Convertendo bytes para KB
+
+# Medir o tempo de início
+start_time = time.perf_counter()
 
 # Ordenar e salvar a lista ordenada
 sorted_arr = read_and_sort_file(file_path)
+
+# Medir o tempo de fim e calcular a diferença
+end_time = time.perf_counter()
+elapsed_time_ms = (end_time - start_time) * 1000  # Convertendo segundos para milissegundos
+
+# Medir o uso de memória após a execução e calcular a diferença
+mem_after = process.memory_info().rss / 1024  # Convertendo bytes para KB
+mem_used_kb = mem_after - mem_before
+
 print(f"Arquivo ordenado salvo como: {file_path.replace('arq-teste.txt', 'arq-teste-ordenado.txt')}")
+print(f"Tempo de execução: {elapsed_time_ms:.2f} ms")
+print(f"RAM utilizada: {mem_used_kb:.2f} KB")
