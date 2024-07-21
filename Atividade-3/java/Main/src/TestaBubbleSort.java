@@ -7,9 +7,9 @@ import java.util.List;
 public class TestaBubbleSort {
     public static void main(String[] args) throws IOException {
         // Caminho do arquivo de entrada
-        String inputFile = "Atividade-3\\arq-teste.txt";
+        String inputFile = "Atividade-3\\arq.txt";
         // Caminho do arquivo de saída
-        String outputFile = "Atividade-3\\arq-teste-ordenado.txt";
+        String outputFile = "Atividade-3\\arq-ordenado.txt";
 
         BubbleSort bs = new BubbleSort();
 

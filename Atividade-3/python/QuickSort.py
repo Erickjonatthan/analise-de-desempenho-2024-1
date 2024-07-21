@@ -22,7 +22,7 @@ def read_and_sort_file(file_path):
     sorted_arr = quick_sort(arr)
     
     # Caminho do novo arquivo
-    new_file_path = file_path.replace('arq-teste.txt', 'arq-teste-ordenado.txt')
+    new_file_path = file_path.replace('arq.txt', 'arq-ordenado.txt')
     
     # Escrever a lista ordenada no novo arquivo
     with open(new_file_path, 'w') as file:
@@ -32,7 +32,7 @@ def read_and_sort_file(file_path):
     return sorted_arr
 
 # Caminho do arquivo
-file_path = r'Atividade-3\arq-teste.txt'
+file_path = r'Atividade-3\arq.txt'
 
 
 # Medir o uso de memória antes da execução
@@ -53,7 +53,7 @@ elapsed_time_ms = (end_time - start_time) * 1000  # Convertendo segundos para mi
 mem_after = process.memory_info().rss / 1024  # Convertendo bytes para KB
 mem_used_kb = mem_after - mem_before
 
-print(f"Arquivo ordenado salvo como: {file_path.replace('arq-teste.txt', 'arq-teste-ordenado.txt')}")
+print(f"Arquivo ordenado salvo como: {file_path.replace('arq.txt', 'arq-ordenado.txt')}")
 print(f"Tempo de execução: {elapsed_time_ms:.2f} ms")
 print(f"RAM utilizada: {mem_used_kb:.2f} KB")
 

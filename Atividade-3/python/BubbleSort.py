@@ -13,10 +13,11 @@ def bubble_sort(arr):
 def read_and_sort_file(file_path):
     with open(file_path, 'r') as file:
         arr = [int(line.strip()) for line in file.readlines()]
+        
     sorted_arr = bubble_sort(arr)
     
     # Caminho do novo arquivo
-    new_file_path = file_path.replace('arq-teste.txt', 'arq-teste-ordenado.txt')
+    new_file_path = file_path.replace('arq.txt', 'arq-ordenado.txt')
     
     # Escrever a lista ordenada no novo arquivo
     with open(new_file_path, 'w') as file:
@@ -25,7 +26,7 @@ def read_and_sort_file(file_path):
     
     return sorted_arr
 
-file_path = r'Atividade-3\arq-teste.txt'
+file_path = r'Atividade-3\arq.txt'
 
 # Medir o uso de memória antes da execução
 process = psutil.Process(os.getpid())
