@@ -8,3 +8,4 @@ Tempo de execução: 39294.02 ms, RAM utilizada: 2948.00 KB
 Tempo de execução: 42296.92 ms, RAM utilizada: 3064.00 KB
 Tempo de execução: 49577.54 ms, RAM utilizada: 3124.00 KB
 Tempo de execução: 39155.80 ms, RAM utilizada: 3168.00 KB
+Tempo de execução: 36004.77 ms, RAM utilizada: 240.00 KB
