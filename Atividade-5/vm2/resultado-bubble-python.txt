@@ -1,0 +1,10 @@
+Execu��o #1 - Tempo de execu��o: 73432.81 ms, RAM utilizada: 3080.00 KB
+Execu��o #2 - Tempo de execu��o: 70676.29 ms, RAM utilizada: 860.00 KB
+Execu��o #3 - Tempo de execu��o: 73537.35 ms, RAM utilizada: 1056.00 KB
+Execu��o #4 - Tempo de execu��o: 76454.94 ms, RAM utilizada: 60.00 KB
+Execu��o #5 - Tempo de execu��o: 70537.37 ms, RAM utilizada: 20.00 KB
+Execu��o #6 - Tempo de execu��o: 73731.47 ms, RAM utilizada: 84.00 KB
+Execu��o #7 - Tempo de execu��o: 75683.85 ms, RAM utilizada: 620.00 KB
+Execu��o #8 - Tempo de execu��o: 70821.20 ms, RAM utilizada: 492.00 KB
+Execu��o #9 - Tempo de execu��o: 77365.83 ms, RAM utilizada: 4.00 KB
+Execu��o #10 - Tempo de execu��o: 71211.84 ms, RAM utilizada: 8.00 KB
